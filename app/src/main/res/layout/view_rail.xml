@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rail"
+    android:layout_width="@dimen/tb_rail_w"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/tb_rail"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    android:paddingTop="32dp"
+    android:paddingBottom="32dp">
+
+    <TextView
+        android:id="@+id/rail_today"
+        style="@style/Tb.Rail.Item"
+        android:text="@string/nav_today" />
+
+    <TextView
+        android:id="@+id/rail_stops"
+        style="@style/Tb.Rail.Item"
+        android:text="@string/nav_stops" />
+
+    <TextView
+        android:id="@+id/rail_report"
+        style="@style/Tb.Rail.Item"
+        android:text="@string/nav_report" />
+
+    <TextView
+        android:id="@+id/rail_settings"
+        style="@style/Tb.Rail.Item"
+        android:text="@string/nav_settings" />
+
+</LinearLayout>

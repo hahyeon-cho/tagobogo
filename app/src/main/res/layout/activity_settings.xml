@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/tb_bg">
+
+    <include layout="@layout/view_topbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingStart="@dimen/tb_gutter"
+        android:paddingEnd="@dimen/tb_gutter"
+        android:paddingTop="@dimen/tb_card_pad_v"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Tb.H1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_title" />
+
+            <LinearLayout style="@style/Tb.Card">
+
+                <TextView
+                    style="@style/Tb.CardTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_role_title" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/seg_role_tech"
+                        style="@style/Tb.Button"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="@dimen/tb_gap_sm"
+                        android:background="@drawable/bg_seg_on"
+                        android:text="@string/role_tech" />
+
+                    <TextView
+                        android:id="@+id/seg_role_sales"
+                        style="@style/Tb.Button"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_seg_off"
+                        android:textColor="@color/tb_muted"
+                        android:text="@string/role_sales" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/role_hint"
+                    style="@style/Tb.Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/tb_gap_sm"
+                    android:text="@string/settings_role_hint" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Tb.Card"
+                android:layout_marginTop="@dimen/tb_gap">
+
+                <TextView
+                    android:id="@+id/signal_tag"
+                    style="@style/Tb.Chip.Accent"
+                    android:text="@string/tag_ok" />
+
+                <TextView
+                    style="@style/Tb.CardTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/settings_signal_title" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Tb.Card.Warn"
+                android:layout_marginTop="@dimen/tb_gap">
+
+                <TextView
+                    style="@style/Tb.Chip.Warn"
+                    android:text="@string/tag_needs_review" />
+
+                <TextView
+                    style="@style/Tb.CardTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/tb_warn"
+                    android:text="@string/settings_gap_title" />
+
+                <TextView
+                    style="@style/Tb.Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/tb_warn"
+                    android:text="@string/settings_gap_sub" />
+
+                <TextView
+                    android:id="@+id/btn_add_stop"
+                    style="@style/Tb.Button.Small"
+                    android:layout_marginTop="@dimen/tb_gap"
+                    android:text="@string/action_add_stop" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Tb.Card"
+                android:layout_marginTop="@dimen/tb_gap">
+
+                <TextView
+                    style="@style/Tb.CardTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_place_title" />
+
+                <TextView
+                    style="@style/Tb.Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_place_sub" />
+
+                <TextView
+                    android:id="@+id/place_list"
+                    style="@style/Tb.Body.Ink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/settings_place_list_sample" />
+
+                <TextView
+                    android:id="@+id/btn_manage_place"
+                    style="@style/Tb.Button.Small.Ghost"
+                    android:layout_marginTop="@dimen/tb_gap"
+                    android:text="@string/action_manage_place" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/view_tabs" />
+</LinearLayout>

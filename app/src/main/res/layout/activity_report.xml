@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/tb_bg">
+
+    <include layout="@layout/view_topbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingStart="@dimen/tb_gutter"
+        android:paddingEnd="@dimen/tb_gutter"
+        android:paddingTop="@dimen/tb_card_pad_v"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/report_title"
+                style="@style/Tb.H1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/report_title" />
+
+            <LinearLayout style="@style/Tb.Card">
+
+                <TextView
+                    android:id="@+id/report_key_1"
+                    style="@style/Tb.Label"
+                    android:text="@string/report_key_customer" />
+
+                <TextView
+                    android:id="@+id/report_value_1"
+                    style="@style/Tb.Body.Ink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/tb_text_field"
+                    android:text="@string/report_customer_tech_sample" />
+
+                <TextView
+                    android:id="@+id/report_source_1"
+                    android:visibility="gone"
+                    style="@style/Tb.Label"
+                    android:layout_marginBottom="@dimen/tb_gap"
+                    android:text="@string/report_source_job" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bg_divider" />
+
+                <TextView
+                    android:id="@+id/report_key_2"
+                    style="@style/Tb.Label"
+                    android:layout_marginTop="@dimen/tb_gap"
+                    android:text="@string/report_key_symptom" />
+
+                <TextView
+                    android:id="@+id/report_value_2"
+                    style="@style/Tb.Body.Ink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/tb_text_field"
+                    android:text="@string/memo_demo_tech_1" />
+
+                <TextView
+                    android:id="@+id/report_source_2"
+                    android:visibility="gone"
+                    style="@style/Tb.Label"
+                    android:layout_marginBottom="@dimen/tb_gap"
+                    android:text="@string/report_source_missing" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bg_divider" />
+
+                <TextView
+                    style="@style/Tb.Label"
+                    android:layout_marginTop="@dimen/tb_gap"
+                    android:text="@string/report_key_visit" />
+
+                <TextView
+                    android:id="@+id/report_value_visit"
+                    style="@style/Tb.Body.Ink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/tb_text_field"
+                    android:text="@string/report_visit_sample" />
+
+                <TextView
+                    android:id="@+id/report_source_visit"
+                    android:visibility="gone"
+                    style="@style/Tb.Label"
+                    android:layout_marginBottom="@dimen/tb_gap"
+                    android:text="@string/report_source_auto" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bg_divider" />
+
+                <TextView
+                    android:id="@+id/report_key_3"
+                    style="@style/Tb.Label"
+                    android:layout_marginTop="@dimen/tb_gap"
+                    android:text="@string/report_key_action" />
+
+                <TextView
+                    android:id="@+id/report_value_3"
+                    style="@style/Tb.Body.Ink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/tb_text_field"
+                    android:text="@string/report_blank" />
+
+                <TextView
+                    android:id="@+id/report_source_3"
+                    android:visibility="gone"
+                    style="@style/Tb.Label"
+                    android:layout_marginBottom="@dimen/tb_gap"
+                    android:text="@string/report_source_missing" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bg_divider" />
+
+                <TextView
+                    android:id="@+id/report_key_4"
+                    style="@style/Tb.Label"
+                    android:layout_marginTop="@dimen/tb_gap"
+                    android:text="@string/report_key_part" />
+
+                <TextView
+                    android:id="@+id/report_value_4"
+                    style="@style/Tb.Body.Ink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/tb_text_field"
+                    android:text="@string/report_blank" />
+
+                <TextView
+                    android:id="@+id/report_source_4"
+                    android:visibility="gone"
+                    style="@style/Tb.Label"
+                    android:layout_marginBottom="@dimen/tb_gap"
+                    android:text="@string/report_source_missing" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bg_divider" />
+
+                <TextView
+                    android:id="@+id/report_key_5"
+                    style="@style/Tb.Label"
+                    android:layout_marginTop="@dimen/tb_gap"
+                    android:text="@string/report_key_result" />
+
+                <TextView
+                    android:id="@+id/report_value_5"
+                    style="@style/Tb.Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/tb_text_field"
+                    android:text="@string/report_blank" />
+
+                <TextView
+                    android:id="@+id/report_source_5"
+                    android:visibility="gone"
+                    style="@style/Tb.Label"
+                    android:text="@string/report_source_missing" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/tb_gutter"
+        android:paddingEnd="@dimen/tb_gutter"
+        android:paddingTop="@dimen/tb_gap"
+        android:paddingBottom="@dimen/tb_card_pad_v">
+
+        <TextView
+            android:id="@+id/btn_submit"
+            style="@style/Tb.Button.Primary"
+            android:text="@string/action_submit" />
+
+        <TextView
+            android:id="@+id/btn_edit_memo"
+            style="@style/Tb.Button.Small.Ghost"
+            android:layout_marginTop="@dimen/tb_gap_sm"
+            android:text="@string/action_edit_memo" />
+    </LinearLayout>
+
+    <include layout="@layout/view_tabs" />
+</LinearLayout>

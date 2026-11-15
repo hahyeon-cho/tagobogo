@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tb_bg">#FF0F1311</color>
+    <color name="tb_surface">#FF1A201C</color>
+    <color name="tb_ink">#FFECF2ED</color>
+    <color name="tb_muted">#FFA7B5AA</color>
+    <color name="tb_line">#FF2F362F</color>
+
+    <color name="tb_accent">#FFA8D093</color>
+    <color name="tb_on_accent">#FF0D1409</color>
+    <color name="tb_soft">#FF242E25</color>
+
+    <color name="tb_warn">#FFE8C089</color>
+    <color name="tb_warn_bg">#FF2B2419</color>
+
+    <color name="tb_rail">#FF141813</color>
+    <color name="tb_rail_ink">#FFE0E9E1</color>
+    <color name="tb_rail_on_bg">#FF2A3627</color>
+    <color name="tb_rail_on_ink">#FFA8D093</color>
+
+    <color name="tb_hero_bg">#FF242E25</color>
+    <color name="tb_hero_stroke">#FF5A7A51</color>
+    <color name="tb_hero_ink">#FFECF2ED</color>
+    <color name="tb_hero_sub">#FFA7B5AA</color>
+    <color name="tb_hero_btn_bg">#FFA8D093</color>
+    <color name="tb_hero_btn_ink">#FF0D1409</color>
+
+    <color name="tb_chip_acc_bg">#00000000</color>
+    <color name="tb_chip_acc_stroke">#FFA8D093</color>
+    <color name="tb_chip_acc_ink">#FFA8D093</color>
+</resources>

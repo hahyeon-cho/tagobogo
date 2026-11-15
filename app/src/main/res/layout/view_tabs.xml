@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabs"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/tb_tabs_h"
+    android:orientation="horizontal"
+    android:background="@color/tb_surface">
+
+    <TextView
+        android:id="@+id/tab_today"
+        style="@style/Tb.Tab"
+        android:text="@string/nav_today" />
+
+    <TextView
+        android:id="@+id/tab_stops"
+        style="@style/Tb.Tab"
+        android:text="@string/nav_stops" />
+
+    <TextView
+        android:id="@+id/tab_report"
+        style="@style/Tb.Tab"
+        android:text="@string/nav_report" />
+
+    <TextView
+        android:id="@+id/tab_settings"
+        style="@style/Tb.Tab"
+        android:text="@string/nav_settings" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tb_gutter">48dp</dimen>
+    <dimen name="tb_gap">24dp</dimen>
+    <dimen name="tb_card_pad_h">40dp</dimen>
+    <dimen name="tb_card_pad_v">36dp</dimen>
+
+    <dimen name="tb_text_h1">62sp</dimen>
+    <dimen name="tb_text_sub">30sp</dimen>
+    <dimen name="tb_text_card_title">46sp</dimen>
+    <dimen name="tb_text_hero">56sp</dimen>
+
+    <dimen name="tb_memo_label_w">190dp</dimen>
+    <dimen name="tb_mic_w">210dp</dimen>
+    <dimen name="tb_report_key_w">260dp</dimen>
+    <dimen name="tb_timeline_time_w">310dp</dimen>
+</resources>

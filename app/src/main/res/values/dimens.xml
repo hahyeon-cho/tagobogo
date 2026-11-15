@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tb_bar_h">96dp</dimen>
+    <dimen name="tb_gutter">40dp</dimen>
+    <dimen name="tb_rail_w">300dp</dimen>
+    <dimen name="tb_tabs_h">120dp</dimen>
+
+    <dimen name="tb_gap">22dp</dimen>
+    <dimen name="tb_gap_sm">14dp</dimen>
+    <dimen name="tb_card_pad_h">36dp</dimen>
+    <dimen name="tb_card_pad_v">32dp</dimen>
+
+    <dimen name="tb_btn_h">94dp</dimen>
+    <dimen name="tb_btn_h_sm">72dp</dimen>
+    <dimen name="tb_field_h">92dp</dimen>
+
+    <dimen name="tb_text_h1">54sp</dimen>
+    <dimen name="tb_text_sub">28sp</dimen>
+    <dimen name="tb_text_card_title">38sp</dimen>
+    <dimen name="tb_text_hero">44sp</dimen>
+    <dimen name="tb_text_body">28sp</dimen>
+    <dimen name="tb_text_label">24sp</dimen>
+    <dimen name="tb_text_btn">34sp</dimen>
+    <dimen name="tb_text_btn_sm">28sp</dimen>
+    <dimen name="tb_text_field">32sp</dimen>
+    <dimen name="tb_text_logo">36sp</dimen>
+    <dimen name="tb_text_status">26sp</dimen>
+
+    <dimen name="tb_memo_label_w">150dp</dimen>
+    <dimen name="tb_mic_w">130dp</dimen>
+    <dimen name="tb_report_key_w">200dp</dimen>
+    <dimen name="tb_timeline_time_w">230dp</dimen>
+</resources>

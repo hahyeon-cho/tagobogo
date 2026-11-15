@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  점 찍힌 style 이름은 앞부분을 부모로 추론하므로, 부모가 없는 경우 parent="" 를 반드시 적는다.
+-->
+<resources>
+    <style name="Theme.TagoBogo" parent="android:Theme.DeviceDefault.NoActionBar">
+        <item name="android:windowBackground">@color/tb_bg</item>
+    </style>
+
+    <style name="Tb.Text" parent="">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Tb.H1" parent="Tb.Text">
+        <item name="android:textSize">@dimen/tb_text_h1</item>
+        <item name="android:textColor">@color/tb_ink</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lineSpacingMultiplier">1.15</item>
+    </style>
+
+    <style name="Tb.Sub" parent="Tb.Text">
+        <item name="android:textSize">@dimen/tb_text_sub</item>
+        <item name="android:textColor">@color/tb_muted</item>
+    </style>
+
+    <style name="Tb.CardTitle" parent="Tb.Text">
+        <item name="android:textSize">@dimen/tb_text_card_title</item>
+        <item name="android:textColor">@color/tb_ink</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Tb.Hero" parent="Tb.Text">
+        <item name="android:textSize">@dimen/tb_text_hero</item>
+        <item name="android:textColor">@color/tb_hero_ink</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+
+    <style name="Tb.Body" parent="Tb.Text">
+        <item name="android:textSize">@dimen/tb_text_body</item>
+        <item name="android:textColor">@color/tb_muted</item>
+        <item name="android:lineSpacingMultiplier">1.4</item>
+    </style>
+
+    <style name="Tb.Body.Ink" parent="Tb.Body">
+        <item name="android:textColor">@color/tb_ink</item>
+    </style>
+
+    <style name="Tb.Label" parent="Tb.Text">
+        <item name="android:textSize">@dimen/tb_text_label</item>
+        <item name="android:textColor">@color/tb_muted</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Tb.Kick" parent="Tb.Label">
+        <item name="android:textColor">@color/tb_accent</item>
+    </style>
+
+    <style name="Tb.Chip" parent="">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_chip</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textSize">@dimen/tb_text_label</item>
+        <item name="android:textColor">@color/tb_ink</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Tb.Chip.Warn" parent="Tb.Chip">
+        <item name="android:background">@drawable/bg_chip_warn</item>
+        <item name="android:textColor">@color/tb_warn</item>
+    </style>
+
+    <style name="Tb.Chip.Accent" parent="Tb.Chip">
+        <item name="android:background">@drawable/bg_chip_accent</item>
+        <item name="android:textColor">@color/tb_chip_acc_ink</item>
+    </style>
+
+    <style name="Tb.Button" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/tb_btn_h</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_btn_soft</item>
+        <item name="android:textSize">@dimen/tb_text_btn</item>
+        <item name="android:textColor">@color/tb_ink</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="Tb.Button.Primary" parent="Tb.Button">
+        <item name="android:background">@drawable/bg_btn_primary</item>
+        <item name="android:textColor">@color/tb_on_accent</item>
+    </style>
+
+    <style name="Tb.Button.Ghost" parent="Tb.Button">
+        <item name="android:background">@drawable/bg_btn_ghost</item>
+    </style>
+
+    <style name="Tb.Button.Hero" parent="Tb.Button">
+        <item name="android:background">@drawable/bg_btn_hero</item>
+        <item name="android:textColor">@color/tb_hero_btn_ink</item>
+    </style>
+
+    <style name="Tb.Button.Small" parent="Tb.Button">
+        <item name="android:layout_height">@dimen/tb_btn_h_sm</item>
+        <item name="android:textSize">@dimen/tb_text_btn_sm</item>
+    </style>
+
+    <style name="Tb.Button.Small.Ghost" parent="Tb.Button.Small">
+        <item name="android:background">@drawable/bg_btn_ghost</item>
+    </style>
+
+    <style name="Tb.Card" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/bg_card</item>
+        <item name="android:paddingStart">@dimen/tb_card_pad_h</item>
+        <item name="android:paddingEnd">@dimen/tb_card_pad_h</item>
+        <item name="android:paddingTop">@dimen/tb_card_pad_v</item>
+        <item name="android:paddingBottom">@dimen/tb_card_pad_v</item>
+    </style>
+
+    <style name="Tb.Card.Hero" parent="Tb.Card">
+        <item name="android:background">@drawable/bg_card_hero</item>
+    </style>
+
+    <style name="Tb.Card.Warn" parent="Tb.Card">
+        <item name="android:background">@drawable/bg_card_warn</item>
+    </style>
+
+    <style name="Tb.Field" parent="Tb.Text">
+        <item name="android:layout_height">@dimen/tb_field_h</item>
+        <item name="android:background">@drawable/bg_input</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">28dp</item>
+        <item name="android:paddingEnd">28dp</item>
+        <item name="android:textSize">@dimen/tb_text_field</item>
+        <item name="android:textColor">@color/tb_ink</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="Tb.Rail.Item" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:paddingTop">22dp</item>
+        <item name="android:paddingBottom">22dp</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">@color/tb_rail_ink</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="Tb.Rail.Item.Selected" parent="Tb.Rail.Item">
+        <item name="android:background">@drawable/bg_rail_item_on</item>
+        <item name="android:textColor">@color/tb_rail_on_ink</item>
+    </style>
+
+    <style name="Tb.Tab" parent="">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/tb_text_label</item>
+        <item name="android:textColor">@color/tb_muted</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="Tb.Tab.Selected" parent="Tb.Tab">
+        <item name="android:textColor">@color/tb_accent</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/tb_bg">
+
+    <include layout="@layout/view_topbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <include layout="@layout/view_rail" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingStart="@dimen/tb_gutter"
+            android:paddingEnd="@dimen/tb_gutter"
+            android:paddingTop="@dimen/tb_card_pad_v"
+            android:paddingBottom="@dimen/tb_card_pad_v">
+
+            <LinearLayout
+                android:id="@+id/today_state_before"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/Tb.H1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/today_before_title" />
+
+                <TextView
+                    style="@style/Tb.Sub"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="@dimen/tb_gap"
+                    android:text="@string/today_before_date_sample" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        style="@style/Tb.Card"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            style="@style/Tb.CardTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/today_before_card_title" />
+
+                        <TextView
+                            style="@style/Tb.Body"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="18dp"
+                            android:text="@string/today_before_bullets" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/btn_start_recording"
+                            style="@style/Tb.Button.Primary"
+                            android:text="@string/action_start_recording" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/today_state_driving"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/Tb.H1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/today_driving_title" />
+
+                <TextView
+                    style="@style/Tb.Sub"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="@dimen/tb_gap"
+                    android:text="@string/today_driving_sub" />
+
+                <LinearLayout
+                    style="@style/Tb.Card"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/driving_summary"
+                        style="@style/Tb.H1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/today_driving_summary_sample" />
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/Tb.Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="26dp"
+                    android:text="@string/today_driving_pending_sample" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/today_state_ready"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/today_title"
+                    style="@style/Tb.H1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/today_title_sample" />
+
+                <TextView
+                    android:id="@+id/today_sub"
+                    style="@style/Tb.Sub"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="@dimen/tb_gap"
+                    android:text="@string/today_sub_sample" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/card_hero"
+                        style="@style/Tb.Card.Hero"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.55">
+
+                        <TextView
+                            style="@style/Tb.Label"
+                            android:textColor="@color/tb_hero_sub"
+                            android:text="@string/hero_kick" />
+
+                        <TextView
+                            android:id="@+id/hero_title"
+                            style="@style/Tb.Hero"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:text="@string/hero_title_sample" />
+
+                        <TextView
+                            android:id="@+id/hero_sub"
+                            style="@style/Tb.Body"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:textColor="@color/tb_hero_sub"
+                            android:text="@string/hero_sub_sample" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/btn_confirm_stop"
+                            style="@style/Tb.Button.Hero"
+                            android:text="@string/action_confirm_stop" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/tb_gap"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/card_gap"
+                            style="@style/Tb.Card">
+
+                            <TextView
+                                style="@style/Tb.Chip.Warn"
+                                android:text="@string/tag_needs_review" />
+
+                            <TextView
+                                android:id="@+id/gap_title"
+                                style="@style/Tb.CardTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:textSize="@dimen/tb_text_card_title"
+                                android:text="@string/gap_title_sample" />
+
+                            <TextView
+                                android:id="@+id/gap_sub"
+                                style="@style/Tb.Body"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/gap_sub_sample" />
+
+                            <TextView
+                                android:id="@+id/btn_check_gap"
+                                style="@style/Tb.Button.Small"
+                                android:layout_marginTop="@dimen/tb_gap"
+                                android:text="@string/action_check_gap" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/Tb.Card"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="@dimen/tb_gap">
+
+                            <TextView
+                                android:id="@+id/report_card_title"
+                                style="@style/Tb.CardTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/report_card_title" />
+
+                            <TextView
+                                android:id="@+id/btn_review_report"
+                                style="@style/Tb.Button.Small"
+                                android:layout_marginTop="@dimen/tb_gap"
+                                android:text="@string/action_review_report" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

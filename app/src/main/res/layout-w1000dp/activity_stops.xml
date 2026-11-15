@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/tb_bg">
+
+    <include layout="@layout/view_topbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <include layout="@layout/view_rail" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/tb_gutter"
+            android:paddingEnd="@dimen/tb_gutter"
+            android:paddingTop="@dimen/tb_card_pad_v"
+            android:paddingBottom="@dimen/tb_card_pad_v">
+
+            <TextView
+                android:id="@+id/stops_date"
+                style="@style/Tb.H1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="52sp"
+                android:text="@string/stops_date_sample" />
+
+            <TextView
+                android:id="@+id/stops_sub"
+                style="@style/Tb.Sub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="@dimen/tb_gap"
+                android:text="@string/stops_sub_sample" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ScrollView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.55">
+
+                    <LinearLayout
+                        android:id="@+id/stops_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" />
+                </ScrollView>
+
+                <LinearLayout
+                    android:id="@+id/card_stop_detail"
+                    style="@style/Tb.Card"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/tb_gap">
+
+                    <TextView
+                        android:id="@+id/detail_tag"
+                        style="@style/Tb.Chip.Warn"
+                        android:text="@string/tag_unconfirmed" />
+
+                    <TextView
+                        android:id="@+id/detail_time"
+                        style="@style/Tb.CardTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/stops_detail_time_sample" />
+
+                    <TextView
+                        android:id="@+id/detail_sub"
+                        style="@style/Tb.Body"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/stops_detail_sub_sample" />
+
+                    <TextView
+                        android:id="@+id/btn_confirm_place"
+                        style="@style/Tb.Button.Small"
+                        android:layout_marginTop="26dp"
+                        android:text="@string/action_confirm_place" />
+
+                    <TextView
+                        android:id="@+id/btn_edit_place"
+                        style="@style/Tb.Button.Small.Ghost"
+                        android:layout_marginTop="@dimen/tb_gap_sm"
+                        android:text="@string/action_edit_place" />
+
+                    <TextView
+                        android:id="@+id/btn_mark_not_work"
+                        style="@style/Tb.Button.Small.Ghost"
+                        android:layout_marginTop="@dimen/tb_gap_sm"
+                        android:text="@string/action_mark_not_work" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        style="@style/Tb.Body"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/stops_detail_note" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

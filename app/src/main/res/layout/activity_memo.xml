@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/tb_bg">
+
+    <include layout="@layout/view_topbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingStart="@dimen/tb_gutter"
+        android:paddingEnd="@dimen/tb_gutter"
+        android:paddingTop="@dimen/tb_card_pad_v"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Tb.H1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/memo_title" />
+
+            <TextView
+                android:id="@+id/memo_context"
+                style="@style/Tb.Sub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="@dimen/tb_gap"
+                android:text="@string/memo_context_tech" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="@dimen/tb_gap">
+
+                <TextView
+                    android:id="@+id/memo_label_1"
+                    style="@style/Tb.CardTitle"
+                    android:layout_width="@dimen/tb_memo_label_w"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/tb_text_field"
+                    android:text="@string/memo_label_symptom" />
+
+                <EditText
+                    android:id="@+id/memo_field_1"
+                    style="@style/Tb.Field"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:importantForAutofill="no"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="@dimen/tb_gap">
+
+                <TextView
+                    android:id="@+id/memo_label_2"
+                    style="@style/Tb.CardTitle"
+                    android:layout_width="@dimen/tb_memo_label_w"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/tb_text_field"
+                    android:text="@string/memo_label_action" />
+
+                <EditText
+                    android:id="@+id/memo_field_2"
+                    style="@style/Tb.Field"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:importantForAutofill="no"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="@dimen/tb_gap">
+
+                <TextView
+                    android:id="@+id/memo_label_3"
+                    style="@style/Tb.CardTitle"
+                    android:layout_width="@dimen/tb_memo_label_w"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/tb_text_field"
+                    android:text="@string/memo_label_part" />
+
+                <EditText
+                    android:id="@+id/memo_field_3"
+                    style="@style/Tb.Field"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:importantForAutofill="no"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/memo_label_4"
+                    style="@style/Tb.CardTitle"
+                    android:layout_width="@dimen/tb_memo_label_w"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/tb_text_field"
+                    android:text="@string/memo_label_result" />
+
+                <EditText
+                    android:id="@+id/memo_field_4"
+                    style="@style/Tb.Field"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:importantForAutofill="no"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/tb_gutter"
+        android:paddingEnd="@dimen/tb_gutter"
+        android:paddingTop="@dimen/tb_gap"
+        android:paddingBottom="@dimen/tb_card_pad_v">
+
+        <TextView
+            android:id="@+id/btn_save_memo"
+            style="@style/Tb.Button.Primary"
+            android:text="@string/action_save_memo" />
+
+        <TextView
+            android:id="@+id/btn_later"
+            style="@style/Tb.Button.Small.Ghost"
+            android:layout_marginTop="@dimen/tb_gap_sm"
+            android:text="@string/action_later" />
+    </LinearLayout>
+</LinearLayout>
