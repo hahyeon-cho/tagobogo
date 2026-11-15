@@ -60,4 +60,4 @@ Android Studio의 **SDK Update Sites**에 `https://nexus-playground.pleos.ai/rep
 
 ## APK 파일 위치
 
-[apk/조하현_tagobogo_release.apk](apk/조하현_tagobogo_release.apk)
+[apk/조하현_타고보고_release.apk](apk/조하현_타고보고_release.apk)
